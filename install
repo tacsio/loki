@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#for python tools
+mkdir -p $HOME/.loki/apps/python/bin
+
+cp -r bin $HOME/.loki
+
+echo "" >> $HOME/.bash_profile
+echo 'source $HOME/.loki/.profile' >> $HOME/.bash_profile
+
+source $HOME/.bash_profile
+
+
