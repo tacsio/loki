@@ -10,11 +10,11 @@
 ![Loki][Loki]
 
 I don't like the way of **alternatives** scripts works, then I decided to write my own symbolic links 'manager'.
-Alternatives commands are awesome and I don't wrote those scripts with purpouse of replace it! I use them, but for some libs in slackware I merely don't want to use.
+Alternatives commands are awesome and I don't wrote those scripts with purpose of replace alternatives! I use alternatives too, but for some libs on slackware I merely don't want to use it.
 
 Installing
 ==========
-Just run instal script after clone the repository
+Just run the install script after clone the repository
 You need to create some links of your libs (actually only python and java) in your linux _/opt/_ folder
 
 ```shell

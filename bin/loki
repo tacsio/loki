@@ -5,19 +5,19 @@ VERSION=$2
 
 #Java
 if [[ $PROGRAM = "java" ]]; then
-	rm $HOME/.loki/apps/java
+	rm $HOME/.loki/apps/java 2> /dev/null
 	ln -s /opt/java${VERSION} $HOME/.loki/apps/java
 fi
 
 #Python
 if [[ $PROGRAM = "python" ]]; then
-	rm $HOME/.loki/apps/python/bin/* 2> /dev/null
+	rm $HOME/.loki/apps/python/* 2> /dev/null
 
 	if [[ $VERSION = "3" ]]; then
-		ln -s /opt/python3/bin/python3.4 $HOME/.loki/apps/python/bin/python
-		ln -s /opt/python3/bin/pip3.4 $HOME/.loki/apps/python/bin/pip
+		ln -sf /opt/python3/bin/python3.4 $HOME/.loki/apps/python/python
+		ln -sf /opt/python3/bin/pip3.4 $HOME/.loki/apps/python/pip
 	else
-		ln -s /usr/bin/python $HOME/.loki/apps/python/bin/python
-		ln -s /usr/bin/pip $HOME/.loki/apps/python/bin/pip
+		ln -sf /usr/bin/python $HOME/.loki/apps/python/python
+		ln -sf /usr/bin/pip $HOME/.loki/apps/python/pip
 	fi
 fi
