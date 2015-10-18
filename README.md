@@ -7,10 +7,14 @@
 Útgáfur hratt breytinga Alls Lib er
 
 ```
+[![GitHub release][Release]](https://github.com/tacsio/loki/releases/latest)
+[![GitHub license][License]](https://github.com/tacsio/loki/blob/master/LICENSE)
+
 ![Loki][Loki]
 
+
 I don't like the way of **alternatives** scripts works, then I decided to write my own symbolic links 'manager'.
-Alternatives commands are awesome and I don't wrote those scripts with purpose of replace alternatives! I use alternatives too, but for some libs on slackware I merely don't want to use it.
+Alternatives commands are awesome. I didn't write those scripts with purpose of replace alternatives! I use alternatives too, but for some libs on slackware I merely don't want to use it.
 
 Installing
 ==========
@@ -60,3 +64,5 @@ Contributing
 
 
 [Loki]: http://media.tumblr.com/70fa5ac4ba299d778a228f316224359a/tumblr_inline_mj5no8v7C11qz4rgp.jpg
+[Release]: https://img.shields.io/github/release/tacsio/loki.svg
+[License]: https://img.shields.io/github/license/tacsio/loki.svg
